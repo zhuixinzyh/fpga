@@ -1,0 +1,70 @@
+m255
+K4
+z2
+!s99 nomlopt
+!s11f vlog 2021.2_1 2021.05, May 15 2021
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/mnt/hgfs/gr1/file/pro_modelsim/test1_I2C
+T_opt
+!s110 1700466591
+VHo13nj;dLaEInAZHEZMY51
+04 2 4 work tb fast 0
+=1-000ae431a4f1-655b0f9e-91cdb-444e
+!s124 OEM100
+o-quiet -auto_acc_if_foreign -work work +acc
+Z1 tCvgOpt 0
+n@_opt
+OL;O;2021.2_1;73
+viic_drive
+Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z3 !s110 1700466590
+!i10b 1
+!s100 ;ESB>^HBHDoTB<e2ad[3Z0
+IoU]CCLi7LohmdUd`3>BP:1
+S1
+R0
+w1697356208
+8./src/iic_drive.sv
+F./src/iic_drive.sv
+!i122 0
+L0 1 9
+Z4 VDg1SIo80bB@j0V0VzS_@n1
+Z5 OL;L;2021.2_1;73
+r1
+!s85 0
+31
+Z6 !s108 1700466589.000000
+Z7 !s107 ./src/tb.sv|./src/iic_drive.sv|
+Z8 !s90 -reportprogress|300|-work|work|./src/iic_drive.sv|./src/tb.sv|
+!i113 0
+Z9 o-work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R1
+vtb
+R2
+R3
+!i10b 1
+!s100 0XTb7eK:98c^M69bh<WL`3
+IO0O75>?6T:a`K7d709j5^3
+S1
+R0
+w1697125589
+8./src/tb.sv
+F./src/tb.sv
+!i122 0
+L0 3 98
+R4
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!i113 0
+R9
+R1

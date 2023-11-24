@@ -1,0 +1,87 @@
+# //  Questa Sim-64
+# //  Version 2021.2_1 linux_x86_64 May 15 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+pwd
+# /home/zyh/FPGA/sim_pro
+ls
+# 1_test_modelsim_vivado_ip_independence
+# 2_led_twinkle
+# 3_uart
+# example
+# test1_I2C
+# transcript
+cd example
+# reading modelsim.ini
+do d.do
+# /home/zyh/FPGA/modelsim.ini
+# ** Warning: (vlib-34) Library already exists at "./modelsim_lib".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "./modelsim_lib/work".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "./modelsim_lib/msim".
+# Errors: 0, Warnings: 1
+# ** Warning: (vlib-34) Library already exists at "./modelsim_lib/msim/xil_defaultlib".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vmap 2021.2_1 Lib Mapping Utility 2021.05 May 15 2021
+# vmap xil_defaultlib modelsim_lib/msim/xil_defaultlib 
+# Modifying modelsim.ini
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 15:39:16 on Nov 21,2023
+# vlog -reportprogress 300 -64 -incr -work xil_defaultlib ./src/glbl.sv ./src/ip_clk_wiz.sv ./src/tb.sv 
+# -- Compiling module glbl
+# -- Skipping module ip_clk_wiz
+# -- Skipping module tb
+# 
+# Top level modules:
+# 	glbl
+# 	tb
+# End time: 15:39:16 on Nov 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 15:39:17 on Nov 21,2023
+# vlog -reportprogress 300 -64 -incr -work xil_defaultlib ./ip/clk/clk_wiz_0.sv ./ip/clk/clk_wiz_0_clk_wiz.sv 
+# -- Skipping module clk_wiz_0
+# -- Skipping module clk_wiz_0_clk_wiz
+# 
+# Top level modules:
+# 	clk_wiz_0
+# End time: 15:39:17 on Nov 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# QuestaSim-64 vlog 2021.2_1 Compiler 2021.05 May 15 2021
+# Start time: 15:39:17 on Nov 21,2023
+# vlog -reportprogress 300 -work xil_defaultlib ./src/glbl.sv 
+# -- Compiling module glbl
+# 
+# Top level modules:
+# 	glbl
+# End time: 15:39:17 on Nov 21,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm -lib xil_defaultlib xil_defaultlib.tb xil_defaultlib.glbl 
+# Start time: 15:39:17 on Nov 21,2023
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# Loading sv_std.std
+# Loading work.tb(fast)
+# Loading work.ip_clk_wiz(fast)
+# Loading work.clk_wiz_0(fast)
+# Loading work.clk_wiz_0_clk_wiz(fast)
+# Loading unisims_ver.IBUFDS(fast)
+# Loading unisims_ver.MMCME4_ADV(fast)
+# Loading unisims_ver.BUFG(fast)
+# Loading work.glbl(fast)
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+quit -sim
+# End time: 15:39:26 on Nov 21,2023, Elapsed time: 0:00:09
+# Errors: 0, Warnings: 0
